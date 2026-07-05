@@ -38,7 +38,6 @@ if st.button("🚀 Evaluate & Correct", type="primary"):
     
     col1, col2, col3, col4 = st.columns(4)
     
-    color = "#00ff88" if score >= 4 else "#00f5ff" if score >= 3 else "#ff006e"
     col1.metric("Overall Score", f"{score}/5.0")
     col2.metric("Facts Found", eval_data["facts_found"])
     col3.metric("Accuracy", f"{eval_data['accuracy']}/5")
